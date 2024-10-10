@@ -1,0 +1,33 @@
+.panel {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }  
+
+  .circle {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .calorias {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .macros {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .macro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  

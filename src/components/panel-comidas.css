@@ -1,0 +1,43 @@
+.comidas {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .styled-table td {
+    padding: 10px;
+    vertical-align: middle; /* Alinear verticalmente los contenidos */
+  }
+  
+  .image {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantener la relación de aspecto */
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar contenido verticalmente */
+  }
+  
+  .button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Color del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Color al pasar el ratón por encima */
+  }
+  
+  .circularProgressbar {
+    width: 50px;
+  }
