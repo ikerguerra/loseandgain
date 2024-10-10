@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+  padding: 10px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  display: flex;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  padding-top: 5px;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* O el tamaño que desees */
+}
+
+.left, .right {
+  font-size: 16px; /* Ajusta el tamaño como prefieras */
+}
+
+.panel {
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+}
