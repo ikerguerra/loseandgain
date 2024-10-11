@@ -1,9 +1,9 @@
-import { Routers } from './Routers';
+import NavigationBar from './components/navigation-bar';
 
 function App() {
   return (
-    <div>
-      <Routers />
+    <div>      
+      <NavigationBar />
     </div>
   );
 }
