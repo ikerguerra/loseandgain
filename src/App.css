@@ -48,3 +48,16 @@
 .panel {
   box-shadow: 2px 2px 8px 4px #d3d3d3d1;
 }
+
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  text-align: center;
+}
+  
+
+
+
+      

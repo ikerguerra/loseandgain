@@ -21,8 +21,8 @@ export default function NavigationBar() {
             setValue(newValue);
           }}
         >
-          <BottomNavigationAction label="Diario" icon={<MenuBook />} />
-          <BottomNavigationAction label="Recetas" icon={<Cookie />} />
+          <BottomNavigationAction to="/home" label="Diario" icon={<MenuBook />} />
+          <BottomNavigationAction to="/detalles" label="Recetas" icon={<Cookie />} />
           <BottomNavigationAction label="Perfil" icon={<AccountCircle />} />
         </BottomNavigation>
       </Paper>
