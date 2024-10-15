@@ -2,9 +2,12 @@ import React from 'react';
 import '../App.css';
 import { Box, CssBaseline, Divider, Fab, List, ListItem, ListItemText, Paper } from '@mui/material';
 import plateImage from '../utils/plate_of_rice_with_chicken.png';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Detalles = () => {
+
+  const location = useLocation();
+  const { comida } = location.state;
 
   const navigate = useNavigate();
 
@@ -19,7 +22,7 @@ const Detalles = () => {
       <header>
         <div className='encabezado'>
         <button onClick={handleNavigateToDetails}>&lt;</button>
-        <div>Almuerzo</div>
+        <div>{ comida }</div>
         <div>Editar</div>
         </div>
       </header>      

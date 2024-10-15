@@ -9,8 +9,8 @@ function PanelComidas() {
 
     const navigate = useNavigate();
 
-    const handleNavigateToDetails = () => {
-        navigate('/detalles');        
+    const handleNavigateToDetails = (comida) => {
+        navigate('/detalles', { state: {comida: comida}});   
     }
 
     return (     
@@ -22,7 +22,7 @@ function PanelComidas() {
             <div className="panel">            
                 <table className="styled-table">
                     <tbody>
-                        <tr>
+                        <tr onClick={() => handleNavigateToDetails('Desayuno')}>
                             <td className='circularProgressbar'><CircularProgressbar value={calories} maxValue={calories} text={`${calories} Restantes`} /></td>
                             <td>
                                 <div className="content">
@@ -32,7 +32,7 @@ function PanelComidas() {
                             </td>
                             <td><button className="button" onClick={handleNavigateToDetails}>+</button></td>
                         </tr>
-                        <tr>
+                        <tr onClick={() => handleNavigateToDetails('Almuerzo')}>
                             <td className='circularProgressbar'><CircularProgressbar value={calories} maxValue={calories} text={`${calories} Restantes`} /></td>
                             <td>
                                 <div className="content">
@@ -42,7 +42,7 @@ function PanelComidas() {
                             </td>                        
                             <td><button className="button" onClick={handleNavigateToDetails}>+</button></td>
                         </tr>
-                        <tr>
+                        <tr onClick={() => handleNavigateToDetails('Cena')}>
                             <td className='circularProgressbar'><CircularProgressbar value={calories} maxValue={calories} text={`${calories} Restantes`} /></td>
                             <td>
                                 <div className="content">
@@ -52,7 +52,7 @@ function PanelComidas() {
                             </td>
                             <td><button className="button" onClick={handleNavigateToDetails}>+</button></td>
                         </tr>
-                        <tr>
+                        <tr onClick={() => handleNavigateToDetails('Snack')}>
                             <td className='circularProgressbar'><CircularProgressbar value={calories} maxValue={calories} text={`${calories} Restantes`} /></td>
                             <td>
                                 <div className="content">
